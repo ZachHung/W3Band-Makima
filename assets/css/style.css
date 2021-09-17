@@ -1,0 +1,382 @@
+:root{
+    --nord-1:#242831;
+    --nord0: #2E3440;
+    --nord1: #3B4252;
+    --nord2: #434C5E;
+    --nord3: #4C566A;
+    --nord4: #D8DEE9;
+    --nord5: #E5E9F0;
+    --nord6: #ECEFF4;
+    --nord7: #8FBCBB;
+    --nord8: #88C0D0;
+    --nord9: #81A1C1;
+    --nord10: #5E81AC;
+    --nord11: #BF616A;
+    --nord12: #D08770;
+    --nord13: #EBCB8B;
+    --nord14: #A3BE8C;
+    --nord15: #B48EAD;
+}
+/**/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#main{
+    background-color: var(--nord6);
+}
+.black-background{
+    background-color: var(--nord-1) !important;
+}
+.text-white{
+    color:var(--nord6) !important;
+}
+.text-black{
+    color:var(--nord-1) !important;
+}
+.text-center{
+    text-align: center !important;
+}
+.row{
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.col{
+    padding:0px 12px;
+    float:left;
+}
+.col-third{
+    width:calc(100%/3);
+}
+.col-half{
+    width:50%;
+}
+.col-full{
+    width: 100%;
+}
+.mt-16px{
+    margin-top: 16px !important;
+}
+.mt-8px{
+    margin-top: 8px !important;
+}
+.mt-32px{
+    margin-top: 32px !important;
+}
+
+/**/
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+    background-color: var(--nord-1);
+    z-index: 1;
+
+}
+#nav{
+    display: inline-block;
+}
+#nav > li > a{
+    text-transform: uppercase;
+}
+
+#nav > li{
+    display: inline-block;
+    position: relative;
+}
+#nav li a{
+    display: inline-block;
+    text-decoration: none;
+    line-height: 50px;
+    padding: 0px 24px;
+}
+#nav > li:hover > a,
+#nav .subnav li:hover,
+#menu-btn:hover 
+{
+    color: var(--nord-1) !important;
+    background-color: var(--nord4);
+}
+#nav, .subnav{
+    list-style-type: none;
+}
+
+#nav .subnav{
+    min-width: 160px;
+    display: none;
+    position: absolute; 
+    background-color: var(--nord6);
+    box-shadow: 0 0 10px rgba(12, 23, 45,.5) ;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#menu-btn{
+    display: none;
+    text-align: center;
+    width: 50px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right:0;
+    line-height: 50px;
+}
+#nav .subnav a{
+    line-height: 36px;
+    padding: 0px 12px;
+}
+#nav .arrow-down{
+    margin-left: 5px;
+    font-size: 14px;
+}
+#header .search-button{
+    font-size: 18px;
+    float:right;
+    line-height: 50px;
+    padding: 0px 16px;
+}
+#header .search-button:hover{
+    color:var(--nord-1);
+    background-color: var(--nord11);
+    cursor: pointer;
+}
+#slider{
+    position: relative;
+    min-height: 400px;
+    background:url('/assets/img/makima.png') no-repeat top center / cover;
+    margin-top: 49px;
+    padding-top: 44%;
+}
+#slider div.decription{
+    position: absolute;
+    width: 100%;
+    bottom: 40px;
+    text-align: center;
+}
+#slider .decription-heading{
+    
+    font-size: 28px;
+}
+
+#content .content-section{
+    padding: 120px 0px;
+    margin:0 auto;
+    width: 65vw;
+}
+#content .section-heading{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    font-size: 28px;
+    
+}
+#content .section-subheading{
+    font-style: italic;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 25px;
+    opacity: 0.7;
+}
+#content .about{
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.4;
+}
+#content .members-section{
+    padding-top: 32px;
+}
+#content .member-img{
+    width:80%;
+    border-radius: 5px;
+}
+#content .name{
+    font-weight: 600;
+}
+.ticket-list{
+    background-color: var(--nord6);
+}
+.ticket-list li{
+    padding: 12px 16px;
+    border-bottom: var(--nord4) solid;
+}
+.ticket-list .sold-out{
+    background-color: var(--nord11);
+    padding: 6px 8px;
+    margin-left: 12px;
+}
+.ticket-left{
+    width: 24px;
+    height: 24px;
+    float: right;
+    background-color: var(--nord-1);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+}
+#content .place-section{
+
+    overflow: hidden;
+    margin-top: 24px;
+}
+
+#content .place-img{
+    display:block;
+    width: 100%;
+}
+#content .place-body{
+    padding: 12px ;
+    background-color: var(--nord6);
+}
+#content .place-heading{
+    font-weight: 600;
+}
+#content .confirm-button:hover{
+    opacity: .4;
+}
+#content .confirm-button{
+    color: var(--nord6);
+    border:none;
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: var(--nord-1);
+    text-decoration: none;
+    cursor: pointer;
+}
+#content .place-img:hover{
+    opacity: .5;
+}
+.modal.open{
+    
+    display: flex;
+}
+.modal{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    background:rgba(0, 0, 0, .4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.modal-container{
+    animation: modalFadeIn .3s ease-in;
+    position: relative;
+    background: var(--nord6);
+    width: 40%;
+    min-height: 200px;
+}
+.modal-close{
+    line-height: 100%;
+    padding: 9px 12px;
+    position: absolute;
+    right: 0px;
+    cursor: pointer
+}
+.modal-close:hover{
+    background: var(--nord4);
+}
+.modal-header i{
+    margin-right:12px;
+}
+.modal-header{
+    font-weight: 600;
+    font-size: 30px;
+    background: var(--nord10);
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-body{
+    padding: 16px;
+}
+.modal-input{
+    display: block;
+    margin-bottom: 24px;
+    padding: 6px;
+    width: 100%;
+}
+.modal-label{
+    margin-bottom: 10px;
+    display: block;
+}
+.modal-label i{
+    margin-right: 4px;
+}
+#pay-ticket{
+    font-weight: 600;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background: var(--nord10);
+    width: 20%;
+    border:none;
+    cursor:pointer;
+}
+#pay-ticket:hover{
+    background: var(--nord9);
+}
+.modal-footer{
+    margin-right: 16px;
+    margin-bottom: 16px;
+    text-align: right;
+}
+.modal-footer a{
+    color:var(--nord10);
+}
+@keyframes modalFadeIn{
+    from{
+        transform: translateY(-200px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+#content .contract-devils{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5;
+}
+#content .contract-section i{
+    width: 32px;
+}
+.contract-section .form-control {
+    width: 100%;
+    font-size: 16px;
+    padding: 4px;
+    border: var(--nord4) 2px solid;
+}
+#content .plane-img{
+    width: 100%;
+
+}
+#footer {
+    font-size: 24px;
+    line-height: 1.6;
+    padding:64px 16px;
+}
+#footer i{
+    width: 28px;
+}
+#footer a{
+    opacity: .6;
+    margin-right: 20px;
+    text-decoration: none;
+}
