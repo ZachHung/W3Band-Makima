@@ -156,7 +156,7 @@ html{
 #slider{
     position: relative;
     min-height: 400px;
-    background:url('/assets/img/makima.png') no-repeat top center / cover;
+    background:url('./assets/img/makima.png') no-repeat top center / cover;
     margin-top: 49px;
     padding-top: 44%;
 }
