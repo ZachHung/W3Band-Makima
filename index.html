@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/4cac1a6/css/all.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/resonsive.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <title>Makima</title>
 </head>
 <body>
@@ -17,9 +17,9 @@
             </div>
             <ul id="nav">
                 <li><a class="text-white" href="#">Home</a></li>
-                <li><a class="text-white" href="#">Characters</a></li>
-                <li><a class="text-white" href="#">Arc</a></li>
-                <li><a class="text-white" href="#">Contract</a></li>
+                <li><a class="text-white" href="#member">Characters</a></li>
+                <li><a class="text-white" href="#arc">Arc</a></li>
+                <li><a class="text-white" href="#contract">Contract</a></li>
                 <li>
                     <a class="text-white" href="#">More<i class="arrow-down fas fa-chevron-down"></i></a>
                     
@@ -46,7 +46,7 @@
             </div>
         </div>
         <div id="content" class="text-black">
-            <div class="content-section ">
+            <div class="content-section " id="member">
                 <h2 class="section-heading">Characters</h2>
                 <p class="section-subheading">Makima sees all</p>
                 <p class="about mt-32px">
@@ -56,24 +56,24 @@
                     asperiores, architecto, ullam debitis odit labore distinctio ducimus recusandae praesentium 
                     nemo consequatur. Enim, doloribus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut distinctio sequi culpa incidunt, dolor excepturi adipisci magni harum illo non voluptatibus a numquam doloremque aliquid aspernatur velit accusamus nemo temporibus?
                 </p>
-                <div class="members-section row text-center">
-                    <div class="col col-third">
+                <div class="members-section row text-center ">
+                    <div class="s-col-full col col-third mt-32px">
                         <p class="name">Fish</p> 
                         <img class="member-img mt-16px" src="./assets/img/Fish.jpg" alt="Fish">
                     </div>
-                    <div class="col col-third">
+                    <div class="s-col-full col col-third mt-32px">
                         <p class="name">Fish</p>  
                         <img class="member-img mt-16px" src="./assets/img/Fish.jpg" alt="Fish">                                                         
                     </div>
-                    <div class="col col-third">
+                    <div class="s-col-full col col-third mt-32px">
                         <p class="name">Fish</p>
                         <img class="member-img mt-16px" src="./assets/img/Fish.jpg" alt="Fish">
                     </div>
                 </div>
             </div>
-
-            <div class="arc-section black-background">
-                <div class="content-section black-background">
+            <!-- Arc begin -->
+            <div class="arc-section black-background" id="arc">
+                <div class="content-section">
                     <h2 class="section-heading text-white">Arcs</h2>
                     <p class="section-subheading text-white">Halloween!</p>
                     <ul class="ticket-list mt-32px">
@@ -82,52 +82,61 @@
                         <li>November <span class="ticket-left text-white">3</span></li>
                     </ul>
                     <div class="place-section row">
-                        <div class="col col-third">
+                        <div class="s-col-full mt-16px  col col-third">
                             <img src="./assets/img/place1.jpg" alt="" class="place-img">
                             <div class="place-body">
                                 <p class="place-heading">Block</p>
                                 <p class="mt-16px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nobis id officiis suscipit!</p>
-                                <button href="#" class=" js-take-button mt-16px confirm-button">Take</button>
+                                <button href="#" class=" js-take-button mt-16px confirm-button s-full-width"> Take </button>
                             </div>
                         </div>
-                        <div class="col col-third">
+                        <div class="s-col-full mt-16px col col-third">
                             <img src="./assets/img/place2.jpg" alt="" class="place-img">
                             <div class="place-body">
                                 <p class="place-heading">Plant</p>
                                 <p class="mt-16px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nobis id officiis suscipit!</p>
-                                <button href="#" class=" js-take-button mt-16px confirm-button">Take </button>
+                                <button href="#" class=" js-take-button mt-16px confirm-button s-full-width"> Take </button>
 
                             </div>
                         </div>
-                        <div class="col col-third">
-                            <img src="/assets/img/place3.jpg" alt="" class="place-img">
+                        <div class="s-col-full mt-16px col col-third">
+                            <img src="./assets/img/place3.jpg" alt="" class="place-img">
                             <div class="place-body">
                                 <p class="place-heading">Ice</p>
                                 <p class="mt-16px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nobis id officiis suscipit!</p>
-                                <button href="#" class=" js-take-button mt-16px confirm-button">Take </button>
+                                <button href="#" class=" js-take-button mt-16px confirm-button s-full-width"> Take  </button>
 
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Arc end -->
             <!--Contract Begin-->
-            <div class="content-section">
+            <div class="content-section" id="contract">
                 <h2 class="section-heading">Contract</h2>
                 <p class="section-subheading">Deal with the Devil</p>
                 <div class="row mt-32px contract-section">
-                    <div class="col col-half contract-devils">
-                        <p><i class="fas fa-dog"></i>Fox</p>
-                        <p><i class="fas fa-snake"></i>Snake</p>
-                        <p><i class="fab fa-octopus-deploy"></i>Octopus</p>
+                    <div class="col col-half s-col-full contract-devils">
+                        <p><i class="fas fa-dog"></i>
+                            Fox
+                        </p>
+                        <p><i class="fas fa-snake"></i>
+                            Snake.
+                            <a class="text-blue" href="tel:666">Call </a>
+                        </p>
+                        <p><i class="fab fa-octopus-deploy"></i>
+                            Octopus.
+                            <a class="text-blue" href="mailto: zachhung911@gmail.com">Send email</a>
+                        </p>
                     </div>
-                    <div class="col col-half">
+                    <div class="col col-half s-col-full">
                         <form action="" class="contract-form">
                             <div class="row">
-                                <div class="col col-half">
+                                <div class="col col-half s-col-full s-mt-8px">
                                     <input type="text" required placeholder="Name" class="form-control">
                                 </div>
-                            <div class="col col-half">
+                            <div class="col col-half s-col-full s-mt-8px">
                                 <input type="text" required placeholder="Email" class="form-control">
                             </div>
                             </div>
@@ -136,7 +145,7 @@
                                     <input type="text" required placeholder="Message" class="form-control">
                                 </div>
                             </div>
-                            <input class="mt-16px confirm-button" type="submit" value="Send">
+                            <input class="mt-16px confirm-button s-full-width" type="submit" value="Send">
                         </form>
                     </div>
                 </div>
@@ -177,14 +186,14 @@
                 Send to
             </label>
             <input id="input-email" type="email" class="modal-input" placeholder="Enter email..."> 
-            <button id="pay-ticket" class="text-white">
+            <button id="pay-ticket" class="text-white s-full-width">
                 Pay
                 <i class="fas fa-check"></i>
             </button>
         </div>
 
         <footer class="modal-footer">
-            Need <a href="#">help?</a>
+            Need <a href="#" class="text-blue">help?</a>
         </footer>
 
 
@@ -215,7 +224,27 @@
         event.stopPropagation()
     })
 
-    // const menuBtn = 
+    const menuBtn = document.getElementById('menu-btn');
+    const header = document.getElementById('header');
+    const headerHeight = header.clientHeight;
+    menuBtn.onclick = ()=>{
+        const isClosed = header.clientHeight === 50
+        if (isClosed)
+            header.style.height = 'auto'
+        else 
+            header.style.height = null
+    }
+    const menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+    for ( const menuItem of menuItems){
+        menuItem.onclick = function(event) {
+            isParrentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav')
+            console.log(this.nextElementSibling)
+            if (isParrentMenu)
+                event.preventDefault()
+            else 
+                header.style.height = null
+        }
+    }
 </script>
 </body>
 </html>
