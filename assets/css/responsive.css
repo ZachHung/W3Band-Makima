@@ -1,86 +1,83 @@
 /* PC */
-@media  (min-width: 1024px){
-    
+@media (min-width: 64em) {
 }
 /* Tablet */
-@media  (min-width: 740px) and (max-width: 1023px){
-    #content .content-section{
-        width: 80%;
-    }
-    #content .contract-devils{
-        line-height: 1.8;
-    }
-    .modal-container{
-        width: 80%;
-    }
-    #footer{
-        font-size: 32px;
-    }
-    #footer i{
-        width: 36px;
-    }
-    
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+	#content .content-section {
+		width: 80%;
+	}
+	#content .contract-devils {
+		line-height: 1.8;
+	}
+	.modal-container {
+		width: 80%;
+	}
+	#footer {
+		font-size: 32px;
+	}
+	#footer i {
+		width: 36px;
+	}
 }
 /* Tablet and Mobile */
-@media  (max-width: 1023px){
-    #content .confirm-button,
-    #content .form-control,
-    .modal-input{
-        padding: 12px 16px;
-        font-size: 18px;
-    }
-    
-    #content .form-control{
-        border: var(--nord4);
-    }
+@media (max-width: 63.9375em) {
+	#content .confirm-button,
+	#content .form-control,
+	.modal-input {
+		padding: 12px 16px;
+		font-size: 18px;
+	}
 
+	#content .form-control {
+		border: var(--nord4);
+	}
 }
 /* Mobile */
-@media  (max-width: 739px){
-    .s-col-full,
-    .s-full-width{
-        width: 100% !important;
-    }
-    .s-mt-8px{
-        margin-top:8px;
-    }
-    
-    #header{
-        overflow: hidden;
-    }
-    #header .search-button{
-        display: none;
-    }
-    #content .content-section{
-        width: 88%;
-    }
-    #nav .subnav{
-        position: initial;
-        background-color: var(--nord-1);
-        box-shadow: none;
-    }
-    #nav .subnav a{
-        color: var(--nord6) !important;
-        padding: 0px 56px;
-    }
-    #nav > li,
-    #nav li a{
-        display: block;
-    }
-    #menu-btn{
-        display: block;
-    }
-    #nav{
-        width: 100%;
-        display:block;
-        text-align: right;
-        margin-top: 50px;
-    }
-    
-    .modal-container{
-        width: 92%;
-    }
-    #pay-ticket{
-        font-size:  18px;
-    }
+@media (max-width: 46.1875em) {
+	.s-col-full,
+	.s-full-width {
+		width: 100% !important;
+	}
+	.s-mt-8px {
+		margin-top: 8px;
+	}
+
+	#header {
+		overflow: hidden;
+	}
+	#header .search-button {
+		display: none;
+	}
+	#content .content-section {
+		width: 88%;
+	}
+	#nav .subnav {
+		position: initial;
+		background-color: var(--nord-1);
+		box-shadow: none;
+	}
+	#nav .subnav a {
+		color: var(--nord6) !important;
+		padding: 0px 56px;
+	}
+	#nav > li,
+	#nav li a {
+		display: block;
+	}
+	#menu-btn {
+		display: block;
+	}
+	#nav {
+		width: 100%;
+		display: block;
+		text-align: right;
+		margin-top: 50px;
+	}
+
+	.modal-container {
+		width: 92%;
+	}
+	#pay-ticket {
+		font-size: 18px;
+	}
 }
