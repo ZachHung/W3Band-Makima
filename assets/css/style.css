@@ -316,6 +316,9 @@ html{
     padding: 6px;
     width: 100%;
 }
+.input:focus{
+    outline: var(--nord9) 2px solid ;
+}
 .modal-label{
     margin-bottom: 10px;
     display: block;
